@@ -78,6 +78,6 @@ tidyData[,90] = NULL
 tidyData[,89] = NULL
 message("Data is ready for export")
 #Export data into file
-write.table(tidyData, "cleaningProject/tidyData.txt", sep="\t")
+write.table(tidyData, "cleaningProject/tidyData.txt", row.name=FALSE, sep="\t")
 message("Export successful")
 message("Please see file 'your_working_directory/cleaningProject/tidyData.txt'")
